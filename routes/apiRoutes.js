@@ -6,7 +6,7 @@
         
 
 // POST routes/api/friends to handle incoming survey results, compatibility logic, load data 
-var friendList = require('../data/friends.js');
+var friendList = require('../app/data/friends.js');
 // var friendList = require('./app/routing/apiRoutes.js')
 
 module.exports = function(app){

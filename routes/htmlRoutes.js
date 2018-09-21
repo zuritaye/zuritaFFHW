@@ -7,12 +7,12 @@
   
 // ROUTING
   module.exports = function(app){
-// app get route that leads home.html and displays the home page
+// GET Route to /survey that will display survey page 
     app.get('/survey', function (req, res) {
       res.sendFile(path.join(__dirname + '/../public/survey.html'));
     });
   
-// app use route to home page
+// Default route that directs to home page 
     app.get("*",function (req, res) {
       res.sendFile(path.join(__dirname + '/../public/home.html'));
     });

@@ -2,10 +2,10 @@
 //as an array of objects. 
     //Each of these objects should roughly follow the format below.
 
-    var friendList = [
+    var friends = [
         {
           name: 'Beau',
-          photo: 'https://en.wikipedia.org/wiki/Colin_Firth ',
+          photo: 'https://www.google.com/search?ei=gyWgW7y7AquO5wKh-Z6oCw&q=colin+firth&oq=colin+&gs_l=psy-ab.1.4.0i131i67j0i131j0i131i67j0i67l4j0j0i67j0.3027.6590..8347...0.0..0.219.1383.6j3j2......0....1..gws-wiz.......0i71j0i3.MrJAP1AQ9vo ',
           scores: [
             "5",
             "1",
@@ -174,5 +174,5 @@
         }
       ]
   
-      module.exports = friendList;
+      module.exports = friends;
   

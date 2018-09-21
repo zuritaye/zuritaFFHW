@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Friend Finder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/mystyle.css" />
 
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -68,7 +68,7 @@
                     </form>
                     <hr>
                     <!-- QUESTIONS -->
-                    <form>
+                    <form action="/api/friends" method="POST">
                         <div class="form-group">
                             <h5>
                                 <label id="#q1" for="exampleFormQuestion1">Question 1</label>
@@ -76,13 +76,13 @@
                             <h6>
                                 <label for="exampleFormControlSelect1">Your feelings are easily hurt.</label>
                             </h6>
-                            <select class="form-control" id="exampleFormControlSelect1" style="width: 155px;">
+                            <select class="form-control" name="Q1" style="width: 155px;">
                                 <option>Select an Option</option>
-                                <option>1 (Strongly Disagree)</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5 (Strongly Agree)</option>
+                                <option class=opt1>1 (Strongly Disagree)</option>
+                                <option class=opt2>2</option>
+                                <option class=opt3>3</option>
+                                <option class=opt4>4</option>
+                                <option class=opt5>5 (Strongly Agree)</option>
                             </select>
                             <br>
                             <h5>
@@ -93,13 +93,13 @@
                                     yourself.
                                 </label>
                             </h6>
-                            <select class="form-control" id="exampleFormControlSelect1" style="width: 155px;">
+                            <select class="form-control" name="Q2" style="width: 155px;">
                                 <option>Select an Option</option>
-                                <option>1 (Strongly Disagree)</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5 (Strongly Agree)</option>
+                                <option class=opt1>1 (Strongly Disagree)</option>
+                                <option class=opt2>2</option>
+                                <option class=opt3>3</option>
+                                <option class=opt4>4</option>
+                                <option class=opt5>5 (Strongly Agree)</option>
                             </select>
                             <br>
                             <h5>
@@ -109,13 +109,13 @@
                                 <label for="exampleFormControlSelect1">You feel undeserving.
                                 </label>
                             </h6>
-                            <select class="form-control" id="exampleFormControlSelect1" style="width: 155px;">
+                            <select class="form-control" name="Q3" style="width: 155px;">
                                 <option>Select an Option</option>
-                                <option>1 (Strongly Disagree)</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5 (Strongly Agree)</option>
+                                <option class=opt1>1 (Strongly Disagree)</option>
+                                <option class=opt2>2</option>
+                                <option class=opt3>3</option>
+                                <option class=opt4>4</option>
+                                <option class=opt5>5 (Strongly Agree)</option>
                             </select>
                             <br>
                             <h5>
@@ -126,13 +126,13 @@
                                     curiosity.
                                 </label>
                             </h6>
-                            <select class="form-control" id="exampleFormControlSelect1" style="width: 155px;">
+                            <select class="form-control" name="Q4" style="width: 155px;">
                                 <option>Select an Option</option>
-                                <option>1 (Strongly Disagree)</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5 (Strongly Agree)</option>
+                                <option class=opt1>1 (Strongly Disagree)</option>
+                                <option class=opt2>2</option>
+                                <option class=opt3>3</option>
+                                <option class=opt4>4</option>
+                                <option class=opt5>5 (Strongly Agree)</option>
                             </select>
                             <br>
                             <h5>
@@ -142,13 +142,13 @@
                                 <label for="exampleFormControlSelect1">People can rarely upset you.
                                 </label>
                             </h6>
-                            <select class="form-control" id="exampleFormControlSelect1" style="width: 155px;">
+                            <select class="form-control" name="Q5" style="width: 155px;">
                                 <option>Select an Option</option>
-                                <option>1 (Strongly Disagree)</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5 (Strongly Agree)</option>
+                                <option class=opt1>1 (Strongly Disagree)</option>
+                                <option class=opt2>2</option>
+                                <option class=opt3>3</option>
+                                <option class=opt4>4</option>
+                                <option class=opt5>5 (Strongly Agree)</option>
                             </select>
                             <br>
                             <h5>
@@ -161,13 +161,13 @@
 
                                 </label>
                             </h6>
-                            <select class="form-control" id="exampleFormControlSelect1" style="width: 155px;">
+                            <select class="form-control" name="Q6" style="width: 155px;">
                                 <option>Select an Option</option>
-                                <option>1 (Strongly Disagree)</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5 (Strongly Agree)</option>
+                                <option class=opt1>1 (Strongly Disagree)</option>
+                                <option class=opt2>2</option>
+                                <option class=opt3>3</option>
+                                <option class=opt4>4</option>
+                                <option class=opt5>5 (Strongly Agree)</option>
                             </select>
                             <br>
                             <h5>
@@ -179,13 +179,13 @@
                                     might think.
                                 </label>
                             </h6>
-                            <select class="form-control" id="exampleFormControlSelect1" style="width: 155px;">
+                            <select class="form-control" name="Q7" style="width: 155px;">
                                 <option>Select an Option</option>
-                                <option>1 (Strongly Disagree)</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5 (Strongly Agree)</option>
+                                <option class=opt1>1 (Strongly Disagree)</option>
+                                <option class=opt2>2</option>
+                                <option class=opt3>3</option>
+                                <option class=opt4>4</option>
+                                <option class=opt5>5 (Strongly Agree)</option>
                             </select>
                             <br>
                             <h5>
@@ -195,13 +195,13 @@
                                 <label for="exampleFormControlSelect1">You get carried away by fantasies and ideas.
                                 </label>
                             </h6>
-                            <select class="form-control" id="exampleFormControlSelect1" style="width: 155px;">
+                            <select class="form-control" name="Q8" style="width: 155px;">
                                 <option>Select an Option</option>
-                                <option>1 (Strongly Disagree)</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5 (Strongly Agree)</option>
+                                <option class=opt1>1 (Strongly Disagree)</option>
+                                <option class=opt2>2</option>
+                                <option class=opt3>3</option>
+                                <option class=opt4>4</option>
+                                <option class=opt5>5 (Strongly Agree)</option>
                             </select>
                             <br>
                             <h5>
@@ -210,13 +210,13 @@
                             <h6>
                                 <label for="exampleFormControlSelect1">You are high maintenance.
                             </h6>
-                            <select class="form-control" id="exampleFormControlSelect1" style="width: 155px;">
+                            <select class="form-control" name="Q9" style="width: 155px;">
                                 <option>Select an Option</option>
-                                <option>1 (Strongly Disagree)</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5 (Strongly Agree)</option>
+                                <option class=opt1>1 (Strongly Disagree)</option>
+                                <option class=opt2>2</option>
+                                <option class=opt3>3</option>
+                                <option class=opt4>4</option>
+                                <option class=opt5>5 (Strongly Agree)</option>
                             </select>
                             <br>
                             <h5>
@@ -228,19 +228,18 @@
                                     your words may be hurtful or unpopular.
                                 </label>
                             </h6>
-                            <select class="form-control" id="exampleFormControlSelect1" style="width: 155px;">
+                            <select class="form-control" name="Q10" style="width: 155px;">
                                 <option>Select an Option</option>
-                                <option>1 (Strongly Disagree)</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5 (Strongly Agree)</option>
+                                <option class=opt1>1 (Strongly Disagree)</option>
+                                <option class=opt2>2</option>
+                                <option class=opt3>3</option>
+                                <option class=opt4>4</option>
+                                <option class=opt5>5</option> (Strongly Agree)</option>
                             </select>
                             <br>
                         </div>
+                        <input type="submit" class="btn btn-primary btn-lg btn-block button" id="submitAns">
                     </form>
-                    <!-- Submit button  -->
-                    <button type="submit" class="btn btn-primary btn-lg btn-block button">Submit</button>
 
                 </div>
 
@@ -281,88 +280,9 @@
                     </div>
                 </div>
 
-                <!-- jQuery -->
-                <script type="text/javascript">
-                    // Modal Event 
-                    var config = {
-                        ".chosen-select": {},
-                        ".chosen-select-deselect": {
-                            allow_single_deselect: true
-                        },
-                        ".chosen-select-no-single": {
-                            disable_search_threshold: 10
-                        },
-                        ".chosen-select-no-results": {
-                            no_results_text: "Sorry... nothing found!"
-                        },
-                        ".chosen-select-width": {
-                            width: "95%"
-                        }
-                    };
-                    for (var selector in config) {
-                        $(selector).chosen(config[selector]);
-                    }
+                
 
-                    // Capture survey inputs 
-                    $("#submit").on("click", function (event) {
-                        event.preventDefault();
-
-                        // Vaidate form 
-                        function validateForm() {
-                            var isValid = true;
-                            $(".form-control").each(function () {
-                                if ($(this).val() === "") {
-                                    isValid = false;
-                                }
-                            });
-
-                            $(".chosen-select").each(function () {
-
-                                if ($(this).val() === "") {
-                                    isValid = false;
-                                }
-                            });
-                            return isValid;
-                        }
-
-                        // Form completion  
-                        if (validateForm() == true) {
-
-                            // Create new friend from the values submitted
-                            var newFriend = {
-                                name: $('#name').val(),
-                                photo: $('#photo').val(),
-                                scores: [
-                                    $('#q1').val(),
-                                    $('#q2').val(),
-                                    $('#q3').val(),
-                                    $('#q4').val(),
-                                    $('#q5').val(),
-                                    $('#q6').val(),
-                                    $('#q7').val(),
-                                    $('#q8').val(),
-                                    $('#q9').val(),
-                                    $('#q10').val()
-                                ]
-                            };
-
-                            // AJAX to post the data to friend API
-                            $.post("/api/friends", newFriend, function (data) {
-                                // Grab the result from the AJAX post to display best match name/photo
-                                $("#match-name").text(data.name);
-                                $("#match-image").attr("src", data.photo);
-
-                                // Display the modal with the best match
-                                $("#results-modal").modal("toggle");
-
-                            });
-                        } else {
-                            alert("Please fill out All fields before submitting survey!")
-                        }
-
-                    });
-
-                </script>
+            
 
 </body>
 
